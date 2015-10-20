@@ -17,7 +17,7 @@ echo "Extracting Archive..."
 unzip -q master.zip
 rm master.zip
 mv Optimium-master Optimium
-service ghost restart << /dev/null
+service ghost restart >> /dev/null
 echo "Done!"
 echo "You may need to now restart Ghost to have it as an option."
 echo "Run this script occasionally to make sure you have the latest 
