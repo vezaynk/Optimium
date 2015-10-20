@@ -21,7 +21,9 @@ The theme strives to be
 
 1. Navigate to `/path/to/ghost/content/themes/`
 2. Run the following command:
-     wget -q -O - http://bit.ly/1NRLR2X | bash
+```
+wget -q -O - http://bit.ly/1NRLR2X | bash
+```
 3. Restart Ghost
 4. Select "Optimium" theme in the admin panel
 5. Done!
@@ -30,5 +32,7 @@ The theme strives to be
 This is extra important right now in order to get the 5.0.0 build once 
 it's released.
 Run the following command from time to time:
-    wget -q -O - http://bit.ly/1NRLR2X | bash
+```
+wget -q -O - http://bit.ly/1NRLR2X | bash
+```
 Note: Updates will overwrite any manual changes to the theme.
