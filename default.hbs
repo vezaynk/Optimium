@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{! Document Settings }}
+<meta charset=utf-8 />
+<meta http-equiv=X-UA-Compatible content="IE=edge" />
+{{! Page Meta }}
+<title>{{meta_title}}</title>
+<meta name=description content={{meta_description}} />
+<meta name=HandheldFriendly content=True />
+<meta name=viewport content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="{{@blog.logo}}">
+<!--[if lt IE 9]>
+<script src=http://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js></script>
+<script type=text/javascript src="{{asset "js/html5shiv.js"}}"></script>
+<script type=text/javascript src="{{asset "js/css3-mediaqueries.js"}}"></script>
+<script type=text/javascript src="{{asset "js/selectivizr-min.js"}}"></script>
+<![endif]-->
+
+{{ghost_head}}
+{{! Styles for Optimium }}
+<link href='//fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+<link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css' rel="stylesheet">
+<link href='{{asset "css/styles.css"}}' rel="stylesheet">
+<style>
+    #head_Optimium,
+    #head_page_Optimium {
+        background-image: url({{@blog.cover}});
+        background-size: cover;
+    }
+</style>
+</head>
+<body class={{body_class}}>
+{{{body}}}
+</body>
+{{! Javascript for Optimium}}
+<script type=text/javascript src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type=text/javascript src="{{asset "js/scripts.js"}}"></script>
+<script>
+$("a[href^='http://'], a[href^='https://']").click(function(){
+$(this).attr("target","_blank");
+});
+$("a[href^='{{@blog.url}}']").click(function(){
+$(this).attr("target","_self");
+});
+</script>
+</html>

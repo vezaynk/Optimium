@@ -1,0 +1,17 @@
+{{! Optimium - BLOG HEADER PARTIAL at Page }}
+
+<header id="head_page_Optimium" data-speed="0.5" data-bleed="20">
+<div id="shade" style="height: 100%; width: 100%; background-color: rgba(0,0,0,0.3);">
+    <div id="head_content_Optimium" class="boxed-cargo">
+
+        {{#if @blog.logo}}
+        <a href="{{@blog.url}}"><img id="logo" src="{{@blog.logo}}" alt="{{@blog.title}} Logo" style="position:fixed" /></a>
+		{{else}}
+        <h1 id="blog_title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+		{{/if}}
+
+        {{> menu_page}}
+
+    </div>
+</div>
+</header>
