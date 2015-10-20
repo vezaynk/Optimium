@@ -31,8 +31,5 @@ wget -q -O - http://bit.ly/1NRLR2X | bash
 #How to update
 This is extra important right now in order to get the 5.0.0 build once 
 it's released.
-Run the following command from time to time:
-```
-wget -q -O - http://bit.ly/1NRLR2X | bash
-```
+Just repeat the steps in the install section.
 Note: Updates will overwrite any manual changes to the theme.
