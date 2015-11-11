@@ -7,6 +7,7 @@
 			{{#foreach posts}}{{#if featured}}
 			
 			{{#has tag="link"}}
+			{{!-- This is a link --}}
 			<article class="index_post {{post_class}}">
 				<div class="corner-ribbon top-right blue">Featured</div>
 				<div class="image_container">
@@ -20,7 +21,7 @@
 				<div class="right_side_article col-off1lg8-off1md8-off1sm8">
 					<header class="post_header">
 						<h2 class="post_title"><a href="{{excerpt}}">{{{title}}}</a></h2> {{#author}}
-						<h5 style="margin-top: 10px;">By <a href="{{excerpt}}">{{name}}</a></h5> {{/author}} </header>
+						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
 					<p class="post_excerpt">{{excerpt}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
 			</article>
 			
@@ -47,7 +48,7 @@
 			{{!-- Non-Featured posts --}}
 			{{#foreach posts}}{{#unless featured}}
     {{#has tag="link"}}
-       
+       {{!-- This is a link --}}
 	   <article class="index_post {{post_class}}"><div class="image_container">
 					<img src="{{image}}" alt="Post Image" class="post_image"></div>
 				<div class="left_side_article col-lg3-md3-sm3"> <span class="fa fa-clock-o"></span>
@@ -56,7 +57,7 @@
 				<div class="right_side_article col-off1lg8-off1md8-off1sm8">
 					<header class="post_header">
 						<h2 class="post_title"><a href="{{excerpt}}">{{{title}}}</a></h2> {{#author}}
-						<h5 style="margin-top: 10px;">By <a href="{{excerpt}}">{{name}}</a></h5> {{/author}} </header>
+						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
 					<p class="post_excerpt">{{excerpt}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
 			</article>
 	   
