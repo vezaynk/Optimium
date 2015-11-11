@@ -1,7 +1,30 @@
 {{!< default}}{{> header}}
 	<main id="content_Optimium" role="main">
 		<a name="start"></a>
-		<div id="content_column_Optimium" class="boxed-cargo">{{#foreach posts}}{{#if featured}}
+		<div id="content_column_Optimium" class="boxed-cargo">
+			
+			{{!-- Non-Featured posts --}}
+			{{#foreach posts}}{{#if featured}}
+			
+			{{#has tag="link"}}
+			<article class="index_post {{post_class}}">
+				<div class="corner-ribbon top-right blue">Featured</div>
+				<div class="image_container">
+					<img src="{{image}}" alt="Post Image" class="post_image"></div>
+				<div class="left_side_article col-lg3-md3-sm3">
+					<div class="stamp"><span class="fa fa-clock-o"></span>
+						<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+						<br><span>{{tags prefix=""}}</span>
+					</div>
+				</div>
+				<div class="right_side_article col-off1lg8-off1md8-off1sm8">
+					<header class="post_header">
+						<h2 class="post_title"><a href="{{excerpt}}">{{{title}}}</a></h2> {{#author}}
+						<h5 style="margin-top: 10px;">By <a href="{{excerpt}}">{{name}}</a></h5> {{/author}} </header>
+					<p class="post_excerpt">{{excerpt}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
+			</article>
+			
+			{{else}}
 			<article class="index_post {{post_class}}">
 				<div class="corner-ribbon top-right blue">Featured</div>
 				<div class="image_container">
@@ -17,8 +40,29 @@
 						<h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2> {{#author}}
 						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
 					<p class="post_excerpt">{{excerpt words="50"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
-			</article>{{/if}}{{/foreach}}{{#foreach posts}}{{#unless featured}}
-			<article class="index_post {{post_class}}"><div class="image_container">
+			</article>
+			{{/has}}
+			{{/if}}{{/foreach}}
+			
+			{{!-- Non-Featured posts --}}
+			{{#foreach posts}}{{#unless featured}}
+    {{#has tag="link"}}
+       
+	   <article class="index_post {{post_class}}"><div class="image_container">
+					<img src="{{image}}" alt="Post Image" class="post_image"></div>
+				<div class="left_side_article col-lg3-md3-sm3"> <span class="fa fa-clock-o"></span>
+					<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+					<br><span>{{tags prefix=""}}</span> </div>
+				<div class="right_side_article col-off1lg8-off1md8-off1sm8">
+					<header class="post_header">
+						<h2 class="post_title"><a href="{{excerpt}}">{{{title}}}</a></h2> {{#author}}
+						<h5 style="margin-top: 10px;">By <a href="{{excerpt}}">{{name}}</a></h5> {{/author}} </header>
+					<p class="post_excerpt">{{excerpt}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
+			</article>
+	   
+    {{else}}
+        
+		<article class="index_post {{post_class}}"><div class="image_container">
 					<img src="{{image}}" alt="Post Image" class="post_image"></div>
 				<div class="left_side_article col-lg3-md3-sm3"> <span class="fa fa-clock-o"></span>
 					<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
@@ -28,5 +72,10 @@
 						<h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2> {{#author}}
 						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
 					<p class="post_excerpt">{{excerpt words="50"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
-			</article>{{/unless}}{{/foreach}} </div>
+			</article>
+		
+    {{/has}}
+			
+			
+			{{/unless}}{{/foreach}} </div>
 	</main>{{pagination}}
