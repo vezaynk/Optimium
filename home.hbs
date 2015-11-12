@@ -5,7 +5,7 @@
 			
 			{{!-- Non-Featured posts --}}
 			{{#foreach posts}}{{#if featured}}
-			
+			{{^has tag="hidden"}}
 			{{#has tag="link"}}
 			{{!-- This is a link --}}
 			<article class="index_post {{post_class}}">
@@ -43,10 +43,12 @@
 					<p class="post_excerpt">{{excerpt words="50"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
 			</article>
 			{{/has}}
+			{{/has}}
 			{{/if}}{{/foreach}}
 			
 			{{!-- Non-Featured posts --}}
 			{{#foreach posts}}{{#unless featured}}
+			{{^has tag="hidden"}}
     {{#has tag="link"}}
        {{!-- This is a link --}}
 	   <article class="index_post {{post_class}}"><div class="image_container">
@@ -75,6 +77,7 @@
 					<p class="post_excerpt">{{excerpt words="50"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
 			</article>
 		
+    {{/has}}
     {{/has}}
 			
 			

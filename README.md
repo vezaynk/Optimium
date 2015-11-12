@@ -43,5 +43,9 @@ Just repeat the steps in the install section.
 Note: Updates will overwrite any manual changes to the theme so be weary.
 
 #Supported features
-- All of Ghost's basic features (Excluding next and previous post, *maybe* we *might* add it in the future. Then again, maybe not. We'll see.)
-- link post type (Links to any page, simply add a "link" tag and insert the url into the body DO NOT FORMAT)
+##All of Ghost's basic features
+Excluding next and previous post, *maybe* we *might* add it in the future. Then again, maybe not. We'll see.
+##link post type
+Links to any page, simply add a "link" tag and insert the url into the body DO NOT FORMAT
+##hidden post
+Hides post from home.hbs and index.hbs. Is still shown on tag.hbs and author.hbs. To hide form everywhere, consider making the page static. Making posts private is not supported by neither Ghost nor Optimium.
