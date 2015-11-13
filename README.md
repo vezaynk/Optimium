@@ -19,6 +19,13 @@ The theme strives to be
 #Stuff to be done
 - Gallery support
 - Media post (Youtube, Video, Spotify and so on)
+- Refactor css (This is a big one, CSS is unreadable and all new changes are simply added to the end of the file.)
+- - Re-order parts of the css in a logical order
+- - Seperate into seperate files (A shared one and one for each kind of page)
+- Create a user and dev branch. The user will be mimified and uncommented to reduce size and dev will be thoroughly and formatted nicely. (Right now it's the worst of both worlds: too poorly structured to modify effenciently yet not compressed enough to play a difference. Also dated comments :/)
+- Add search (Using ghosthunter.js)
+- Add information card to tag pages
+- Re-introduce RSS implementation which was partially stripped from Willsong 1.1 or kill it off completely.
 
 ##[Demo](http://knyz.org)
 My personal website which is not even in progress of being done.. Theme is being tested there.
@@ -46,6 +53,6 @@ Note: Updates will overwrite any manual changes to the theme so be weary.
 ##All of Ghost's basic features
 Excluding next and previous post, *maybe* we *might* add it in the future. Then again, maybe not. We'll see.
 ##link post type
-Links to any page, simply add a "link" tag and insert the url into the body DO NOT FORMAT
+Links to any page, simply add a "`link`" tag and insert the url into the body DO NOT FORMAT or it will fail. If you want to add some body, a cheap hack you can use is add a hashtag after the link so it will be all treated like a non-existant anchor.
 ##hidden post
-Hides post from home.hbs and index.hbs. Is still shown on tag.hbs and author.hbs. To hide form everywhere, consider making the page static. Making posts private is not supported by neither Ghost nor Optimium.
+Hides post from home.hbs and index.hbs by adding "`hidden`" tag. Is still shown on tag.hbs and author.hbs. To hide form everywhere, consider making the page static. Making posts private is not supported by neither Ghost nor Optimium.
