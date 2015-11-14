@@ -6,7 +6,7 @@
 ::-webkit-scrollbar-thumb:window-inactive{background:#bdbdbd}
 ::-moz-selection{background:rgba(0, 0, 0, 0.1)}
 ::selection{background:rgba(0, 0, 0, 0.1)}
-body{overflow-x:hidden;background-color:#F7F7F7;font:20px/34px Roboto, sans-serif;text-rendering:optimizeLegibility}
+body{overflow-x:hidden;background-color:#F7F7F7;font: 20px/34px Roboto, sans-serif;text-rendering:optimizeLegibility}
 ul{list-style:square}
 h1,
 h2,
@@ -23,7 +23,7 @@ h6{font-family:"Raleway", serif;font-weight:400;}
 #head_Optimium #head_content_Optimium h1{border:3px solid #fff;display:inline-block;font-family:"Roboto Condensed", sans-serif;font-weight:400;margin:0 30px;padding:0 15px}
 #head_Optimium #head_content_Optimium a{color:#fff;text-decoration:none}
 #head_Optimium #head_content_Optimium #blog_description{display:inline-block;font-family:"Raleway", serif;margin:0 30px;max-width:820px}
-#menu_Optimium{font-family:"Roboto Condensed", sans-serif;font-size:.9em;padding:20px 0;position:relative}
+#menu_Optimium{font-family: "Roboto", sans-serif;font-size:.9em;padding:20px 0;position:relative}
 #menu_Optimium ul{margin:0;padding:0;list-style:none}
 #menu_Optimium ul li{display:inline-block;margin:0 5px;vertical-align:top}
 #menu_Optimium ul a{border-bottom:0 solid #fff;padding:0 5px;text-transform:uppercase;-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}
@@ -340,10 +340,10 @@ img[class*=img-square][class*='800']{height:800px!important;width:800px!importan
 img[class*=img-][class*=circle]{border-radius:50%!important}
 img[class*=img-][class*=frame]{border:1px solid #dedede;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:4px}
 h1{font-size:2em;line-height:1.4em}
-h2{font-size:1.8em;line-height:1.4em}
+h2{font-size: 1.5em;line-height:1.4em}
 h3{font-size:1.6em;line-height:1.2em}
 h4{font-size:1.4em;line-height:1.2em}
-h5{font-size:1.2em;line-height:1em}
+h5{font-size: 1em;line-height:1em;margin-top: 10px;     margin-bottom: 10px;}
 h6{font-size:1em;line-height:1em}
 .caption,
 h1 small,

@@ -26,6 +26,7 @@ The theme strives to be
 - Add search (Using ghosthunter.js)
 - Add information card to tag pages
 - Re-introduce RSS implementation which was partially stripped from Willsong 1.1 or kill it off completely.
+- Rehaul tag and author pages
 
 ##[Demo](http://knyz.org)
 My personal website which is not even in progress of being done.. Theme is being tested there.
