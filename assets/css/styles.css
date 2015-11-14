@@ -68,7 +68,7 @@ h6{font-family:"Raleway", serif;font-weight:400;}
 #content_column_Optimium article pre{border-radius:3px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;color:#fff;margin:0;width:100%}
 #content_column_Optimium article.index_post{width:100%}
 #content_column_Optimium article.index_post h2{margin:0}
-nav.pagination{border-top:1px solid #bdbdbd;position:relative;padding:20px 0;text-align:center;width:100%;background-color:white;}
+nav.pagination, footer{border-top:1px solid #bdbdbd;position:relative;padding:20px 0;text-align:center;width:100%;background-color:white;}
 nav.pagination .page-number{color:#bdbdbd;font-size:.8em}
 nav.pagination .older-posts,
 nav.pagination .newer-posts{color:#303030;font-size:.8em;font-weight:700;padding:2px 12px;position:absolute;-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease;top:20px}
@@ -537,4 +537,12 @@ hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+footer{
+  padding: 0;
+}
+footer a {
+    color: #bdbdbd;
+    font-size: .8em;
+    text-decoration: none;
 }
