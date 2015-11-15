@@ -3,6 +3,10 @@ This theme is not ready yet. I just prepared the repository for when it is. Only
 around with the theme.
 Theme is ready for use but no yet in it's final state. This ReadMe is maintained, check back if any issues occur or create an issue.
 
+![Ghost Version](https://img.shields.io/badge/Ghost-0.7.x-brightgreen.svg?style=flat-square)
+![Optimium Version](https://img.shields.io/badge/Version-Alpha-yellow.svg?style=flat-square)
+![Bug Count](https://img.shields.io/badge/Known%20Bugs-None-yellow.svg?style=flat-square)
+
 #Optimium
 This is the (upcoming) version 5.0 of the Optimium theme.
 Based on Optimium 3.4 and Willsong 1.1's initial code-base (which is being more and more replaced with Optimium's own).
@@ -25,10 +29,11 @@ The theme strives to be
 - Create a user and dev branch. The user will be mimified and uncommented to reduce size and dev will be thoroughly and formatted nicely. (Right now it's the worst of both worlds: too poorly structured to modify effenciently yet not compressed enough to play a difference. Also dated comments :/)
 - Add search (Using ghosthunter.js)
 - Add information card to tag pages
-- Re-introduce RSS implementation which was partially stripped from Willsong 1.1 or kill it off completely.
 - Rehaul tag and author pages
+- Get proper screen caps for demo
+- Ditch Ghostship for Bootstrap 3
 
-##[Demo](http://knyz.org)
+##[Demo](https://knyz.org)
 My personal website which is not even in progress of being done.. Theme is being tested there.
 
 ##[Custom Implementation](http://blog.pggr.org/)
