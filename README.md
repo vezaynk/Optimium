@@ -26,12 +26,14 @@ The theme strives to be
 - Refactor css (This is a big one, CSS is unreadable and all new changes are simply added to the end of the file.)
 - - Re-order parts of the css in a logical order
 - - Seperate into seperate files (A shared one and one for each kind of page)
-- Create a user and dev branch. The user will be mimified and uncommented to reduce size and dev will be thoroughly and formatted nicely. (Right now it's the worst of both worlds: too poorly structured to modify effenciently yet not compressed enough to play a difference. Also dated comments :/)
+- (Lastly) Create a user and dev branch. The user will be mimified and uncommented to reduce size and dev will be thoroughly and formatted nicely. (Right now it's the worst of both worlds: too poorly structured to modify effenciently yet not compressed enough to play a difference. Also dated comments :/)
 - Add search (Using ghosthunter.js)
 - Add information card to tag pages
 - Rehaul tag and author pages
 - Get proper screen caps for demo
-- Ditch Ghostship for Bootstrap 3
+
+###Latest Update
+Removed Grid System
 
 ##[Demo](https://knyz.org)
 My personal website which is not even in progress of being done.. Theme is being tested there.

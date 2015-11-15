@@ -34,7 +34,8 @@
 <body class={{body_class}}>
 {{{body}}}
 <footer>
-  <a href="rss/">
+  
+  <a href="{{#is "post, page"}}{{@blog.url}}/{{/is}}rss/">
     <span class="rss fa fa-rss"> RSS</span>
   </a>
     
