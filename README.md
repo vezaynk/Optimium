@@ -5,7 +5,7 @@ Theme is ready for use but no yet in it's final state. This ReadMe is maintained
 
 ![Ghost Version](https://img.shields.io/badge/Ghost-0.7.x-brightgreen.svg?style=flat-square)
 ![Optimium Version](https://img.shields.io/badge/Version-Alpha-yellow.svg?style=flat-square)
-![Bug Count](https://img.shields.io/badge/Known%20Bugs-None-yellow.svg?style=flat-square)
+![ReadMe last updated](https://img.shields.io/badge/ReadMe-15/11/2015-blue.svg?style=flat-square)
 
 #Optimium
 This is the (upcoming) version 5.0 of the Optimium theme.
