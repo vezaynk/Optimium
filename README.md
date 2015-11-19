@@ -34,7 +34,7 @@ The theme strives to be
 - Remove comment area if there are no comments
 - Add table of contents to readme and link to more comprehensive guide.
 
-###Latest Update
+###Latest Updates
 Enabled exclusions from indexes
 
 ##[Demo](https://www.knyz.org)
@@ -94,7 +94,7 @@ We recommend size 760x400. It will work better like that.
 We are pretty much the only theme (as far as I know) that made it easy to add any comments you want (But we officially support [muut](https://muut.com/) and will sacrifice functionality of others without any hesitation)
 How to add comments:
  - Get code (Muut, Disqus, livefyre, whatever)
- - Paste it into `ghost_header` in the *code injection* section
+ - Paste it into `ghost_footer` in the *code injection* section
  - Done. That was easy!
 ##Quoting
 When quoting someone, it's always a great idea to give a source. Just add two ">" and then the source after the quote.
