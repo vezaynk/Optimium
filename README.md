@@ -5,7 +5,7 @@ Theme is ready for use but no yet in it's final state. This ReadMe is maintained
 
 ![Ghost Version](https://img.shields.io/badge/Ghost-0.7.x-brightgreen.svg?style=flat-square)
 ![Optimium Version](https://img.shields.io/badge/Version-Alpha-yellow.svg?style=flat-square)
-![ReadMe last updated](https://img.shields.io/badge/ReadMe-15/11/2015-blue.svg?style=flat-square)
+![ReadMe last updated](https://img.shields.io/badge/ReadMe-18/11/2015-blue.svg?style=flat-square)
 
 #Optimium
 This is the (upcoming) version 5.0 of the Optimium theme.
@@ -31,12 +31,12 @@ The theme strives to be
 - Add information card to tag pages
 - Rehaul tag and author pages
 - Get proper screen caps for demo
-
+- Remove comment area if there are no comments
 ###Latest Update
-Removed Grid System
+Modified post.hbs page
 
 ##[Demo](https://knyz.org)
-My personal website which is not even in progress of being done.. Theme is being tested there.
+My personal website which is not even in progress of being done.. Theme is being tested there. Will usually not be in sync up with the actual repository since changes are constantly being done there. Keeping it in sync with this repo is both dangerous and stupid.
 
 ##[Custom Implementation](http://blog.pggr.org/)
 This is a forked and dated build of Optimium's preview. Gives a rough idea of what the theme *can* look like. Map is obviously not included (which is the reason for the fork in the first place).
@@ -64,3 +64,28 @@ Excluding next and previous post, *maybe* we *might* add it in the future. Then 
 Links to any page, simply add a "`link`" tag and insert the url into the body DO NOT FORMAT or it will fail. If you want to add some body, a cheap hack you can use is add a hashtag after the link so it will be all treated like a non-existant anchor.
 ##hidden post
 Hides post from home.hbs and index.hbs by adding "`hidden`" tag. Is still shown on tag.hbs and author.hbs. To hide form everywhere, consider making the page static. Making posts private is not supported by neither Ghost nor Optimium.
+
+#Best Practices
+##Edit images before uploading as cover
+We recommend size 760x400. It will work better like that.
+##Comments
+We are pretty much the only theme (as far as I know) that made it easy to add any comments you want (But we officially support [muut](https://muut.com/) and will sacrifice functionality of others without any hesitation)
+How to add comments:
+ - Get code (Muut, Disqus, livefyre, whatever)
+ - Paste it into ghost_foot in the *code injection* section
+ - Done. That was easy!
+##Quoting
+When quoting someone, it's always a great idea to give a source. Just add two ">" and then the source after the quote.
+Example:
+```
+>Ghost is a simple, powerful publishing platform that allows you to share your stories with the world.
+>>Source: https://ghost.org
+```
+#Issues faced
+##Search
+Ghosthunter.js seems to be having some issues, I want to make sure that it is all working perfectly before integrating it into Optimium.
+##Media Posts
+Hard time figuring out how to do that
+##Galleries
+Figuring out how to make galleries easy to make without using any confusing methods or manipulating the text with JQuery. We are looking for a nativish solution since ghost doesn't allow gallery posts.
+A post type focusing of a single picture is something we are looking into though.
