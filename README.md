@@ -41,7 +41,8 @@ Enabled exclusions from indexes
 My personal website which is not even in progress of being done.. Theme is being tested there. Will usually not be in sync up with the actual repository since changes are constantly being done there. Keeping it in sync with this repo is both dangerous and stupid.
 
 ##[Practical Demo](http://blog.pggr.org/)
-Client using the Optimium theme which has been recently re-connected to upstream.
+Client using the Optimium theme which has been recently re-connected to upstream. 
+Map on the top of the page is no longer a deviation of the theme. It is there by using the `custom` tag for custom html, `home-only` to only display it on the homepage and it is featured to stick to the top. 
 
 #How to install
 
