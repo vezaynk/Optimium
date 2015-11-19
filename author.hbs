@@ -19,7 +19,7 @@
         </article>
 
         {{#foreach posts}}
-
+{{^has tag="home-only, index-only, no-author"}}
         {{#has tag="link"}}
        {{!-- This is a link --}}
 	   <article class="index_post {{post_class}}">
@@ -31,7 +31,7 @@
 					<header class="post_header">
 						<h2 class="post_title"><a href="{{excerpt}}">{{{title}}}</a></h2> {{#author}}
 						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
-					<p class="post_excerpt">{{excerpt}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
+					<p class="post_excerpt">{{excerpt characters="140"}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
 			</article>
 	   
     {{else}}
@@ -46,11 +46,11 @@
 					<header class="post_header">
 						<h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2> {{#author}}
 						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
-					<p class="post_excerpt">{{excerpt words="50"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
+					<p class="post_excerpt">{{excerpt characters="140"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
 			</article>
 		
     {{/has}}
-
+{{/has}}
         {{/foreach}}
 
         

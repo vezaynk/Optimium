@@ -3,6 +3,7 @@
 		<a name="start"></a>
 		<div id="content_column_Optimium" class="boxed-cargo">{{#foreach posts}}
 <center>
+	{{^has tag="home-only, author-only, index-only, no-tag"}}
         {{#has tag="link"}}
        {{!-- This is a link --}}
 	   <article class="index_post {{post_class}}"><div class="image_container">
@@ -14,11 +15,13 @@
 					<header class="post_header">
 						<h2 class="post_title"><a href="{{excerpt}}">{{{title}}}</a></h2> {{#author}}
 						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
-					<p class="post_excerpt">{{excerpt}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
+					<p class="post_excerpt">{{excerpt characters="140"}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
 			</article>
 	   
     {{else}}
-        
+        {{#has tag="custom"}}
+		{{content}}
+		{{else}}
 		<article class="index_post {{post_class}}"><div class="image_container">
 					<img src="{{image}}" alt="Post Image" class="post_image"></div>
 				<div class="left_side_article"> <span class="fa fa-clock-o"></span>
@@ -28,10 +31,11 @@
 					<header class="post_header">
 						<h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2> {{#author}}
 						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
-					<p class="post_excerpt">{{excerpt words="50"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
+					<p class="post_excerpt">{{excerpt characters="140"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
 			</article>
 		
     {{/has}}
-
+    {{/has}}
+{{/has}}
         {{/foreach}} </div>
 	</main>{{pagination}}

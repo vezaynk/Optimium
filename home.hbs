@@ -24,10 +24,13 @@
 					<header class="post_header">
 						<h2 class="post_title"><a href="{{excerpt}}">{{{title}}}</a></h2> {{#author}}
 						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
-					<p class="post_excerpt">{{excerpt}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
+					<p class="post_excerpt">{{excerpt characters="140"}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
 			</article>
 			
 			{{else}}
+			{{#has tag="custom"}}
+		{{content}}
+		{{else}}
 			<article class="index_post {{post_class}}">
 				<div class="corner-ribbon top-right blue">Featured</div>
 				
@@ -43,8 +46,9 @@
 					<header class="post_header">
 						<h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2> {{#author}}
 						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
-					<p class="post_excerpt">{{excerpt words="50"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
+					<p class="post_excerpt">{{excerpt characters="140"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
 			</article>
+			{{/has}}
 			{{/has}}
 			{{/has}}
 			{{/if}}{{/foreach}}
@@ -65,11 +69,15 @@
 					<header class="post_header">
 						<h2 class="post_title"><a href="{{excerpt}}">{{{title}}}</a></h2> {{#author}}
 						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
-					<p class="post_excerpt">{{excerpt}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
+					<p class="post_excerpt">{{excerpt characters="140"}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
 			</article>
 	   
     {{else}}
         
+		{{#has tag="custom"}}
+		{{content}}
+		{{else}}
+		
 		<article class="index_post {{post_class}}">
 			
 				<div class="left_side_article"> <span class="fa fa-clock-o"></span>
@@ -82,8 +90,10 @@
 					<header class="post_header">
 						<h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2> {{#author}}
 						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
-					<p class="post_excerpt">{{excerpt words="50"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
+					<p class="post_excerpt">{{excerpt characters="140"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
 			</article>
+			
+			{{/has}}
 		
     {{/has}}
     {{/has}}
