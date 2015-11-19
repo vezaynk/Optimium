@@ -19,7 +19,7 @@
         </article>
 
         {{#foreach posts}}
-{{^has tag="home-only, index-only, tag-only,no-author"}}
+{{^has tag="home-only, index-only, tag-only,no-author, private"}}
         {{#has tag="link"}}
        {{!-- This is a link --}}
 	   <article class="index_post {{post_class}}">

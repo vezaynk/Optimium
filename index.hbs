@@ -5,7 +5,7 @@
 			<center>
 			{{!-- Featured posts --}}
 			{{#foreach posts}}{{#if featured}}
-			{{^has tag="hidden,home-only"}}
+			{{^has tag="hidden,home-only, no-index, tag-only, author-only, private"}}
 			{{#has tag="link"}}
 			{{!-- This is a link --}}
 			<article class="index_post {{post_class}}">
