@@ -35,7 +35,7 @@ The theme strives to be
 New update client
 
 ##[Demo](https://www.knyz.org)
-My personal website which is not even in progress of being done.. Theme is being tested there. Will usually not be in sync up with the actual repository since changes are constantly being done there. Keeping it in sync with this repo is both dangerous and stupid.
+My personal website which is not even in progress of being done.. Theme is being tested there.
 
 ##[Practical Demo](http://blog.pggr.org/)
 Client using the Optimium theme which has been recently re-connected to upstream. 
