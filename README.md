@@ -56,7 +56,7 @@ wget -q -O - http://bit.ly/1NRLR2X | bash
 This is extra important right now in order to get the 5.0.0 build once it's released.
 
 1. Go to `/path/to/ghost/content/themes` 
-2. Run `sh optimium.sh`
+2. Run `bash optimium.sh`
 
 Note: Updates will overwrite any manual changes to the theme so be weary.
 
