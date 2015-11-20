@@ -17,7 +17,17 @@ echo "Extracting Archive..."
 unzip -q master.zip
 rm master.zip
 mv Optimium-master Optimium
+echo "Attemping to restart Ghost..."
+echo "As a service.."
 service ghost restart >> /dev/null
+echo "As a forever script.."
+cd ../..
+forever stop index.js >> /dev/null
+forever start index.js >> /dev/null
+cd content/themes/
+echo "Using SuperVisor.."
+supervisorctl stop ghost >> /dev/null
+supervisorctl start ghost >> /dev/null
 echo "Creating update script"
 cp Optimium/install.sh optimium.sh
 echo "Done!"
