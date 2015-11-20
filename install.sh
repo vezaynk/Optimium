@@ -18,15 +18,15 @@ rm master.zip
 mv Optimium-master Optimium
 echo "Attemping to restart Ghost..."
 echo "As a service.."
-service ghost restart >> /dev/null
+service ghost restart 2>/dev/null
 echo "As a forever script.."
 cd ../..
-forever stop index.js >> /dev/null
-forever start index.js >> /dev/null
+forever stop index.js 2>/dev/null
+forever start index.js 2>/dev/null
 cd content/themes/
 echo "Using SuperVisor.."
-supervisorctl stop ghost >> /dev/null
-supervisorctl start ghost >> /dev/null
+supervisorctl stop ghost 2>/dev/null
+supervisorctl start ghost 2>/dev/null
 echo "Creating update script"
 cp Optimium/install.sh optimium.sh
 echo "Done!"
