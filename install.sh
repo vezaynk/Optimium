@@ -1,4 +1,3 @@
-
 curpath=`pwd`
 if ! [[ $curpath =~ .*/ghost/content/themes.* ]]
 then
