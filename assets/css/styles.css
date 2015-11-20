@@ -427,7 +427,7 @@ img[src=""]{display:none;}
 .full_post{/* margin-top:0; */}
 .author_head{background-color:white;padding-top:50px;margin-top:-50px}
 }
-.full_post{padding: 20px;}
+.full_post{padding: 10px;}
 article{
 	overflow: hidden;
 }
@@ -512,4 +512,19 @@ a{
 }
 article{
   text-align: left; 
+}
+/* Experimental */
+
+/* REMOVE THIS LINE TO ENABLE EXPER
+.home-listing{
+    margin-top: -20vh;
+}
+.home-listing center:first-child{
+  opacity: 1 !important;
+}
+.home-listing{
+    margin-top: -20vh;
+}
+.header_main{
+  z-index: -1 !important;
 }
