@@ -21,7 +21,7 @@ jQuery.extend(jQuery.easing, {
         return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
     }
 });
-
+$(document).ready(function(){
 var wheel = false,
     $docH = $(document).height() - $(window).height(),
     $scrollTop = $(window).scrollTop();
@@ -36,10 +36,11 @@ $(document).bind('DOMMouseScroll mousewheel', function(e, delta) {
     wheel = true;
 
     $scrollTop = Math.min($docH, Math.max(0, parseInt($scrollTop - delta * 30)));
-    $("html, body").stop().animate({
+    $("body").stop().animate({
         scrollTop: $scrollTop + 'px'
     }, 2000, 'easeOutQuint', function() {
         wheel = false;
     });
     return false;
+});
 });
