@@ -16,12 +16,12 @@ tiles.each(function(i){
 	if(a<b || c<b)
 		$(this).fadeTo(500,1);
 	});
+jQuery(window).load(function () {
 jQuery.extend(jQuery.easing, {
     easeOutQuint: function(x, t, b, c, d) {
         return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
     }
 });
-$(document).ready(function(){
 var wheel = false,
     $docH = $(document).height() - $(window).height(),
     $scrollTop = $(window).scrollTop();
