@@ -35,7 +35,7 @@ $(document).bind('DOMMouseScroll mousewheel', function(e, delta) {
     delta = delta || -e.originalEvent.detail / 3 || e.originalEvent.wheelDelta / 60;
     wheel = true;
 
-    $scrollTop = Math.min($docH+1000000, Math.max(0, parseInt($scrollTop - delta * 30)));
+    $scrollTop = Math.min($(document).height() - $(window).height(), Math.max(0, parseInt($scrollTop - delta * 30)));
     $("body").stop().animate({
         scrollTop: $scrollTop + 'px'
     }, 2000, 'easeOutQuint', function() {
