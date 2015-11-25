@@ -22,25 +22,20 @@ jQuery.extend(jQuery.easing, {
     }
 });
 
-
-
-/*
-$(window).bind('scroll', function() {
-    var wheel = false,
+var wheel = false,
     $docH = $(document).height() - $(window).height(),
     $scrollTop = $(window).scrollTop();
+
+$(window).bind('scroll', function() {
     if (wheel === false) {
         $scrollTop = $(this).scrollTop();
     }
 });
 $(document).bind('DOMMouseScroll mousewheel', function(e, delta) {
-    var wheel = false,
-    $docH = $(document).height() - $(window).height(),
-    $scrollTop = $(window).scrollTop();
     delta = delta || -e.originalEvent.detail / 3 || e.originalEvent.wheelDelta / 60;
     wheel = true;
 
-    $scrollTop = Math.min($docH, Math.max(0, parseInt($scrollTop - delta * 30)));
+    $scrollTop = Math.min($docH+1000000, Math.max(0, parseInt($scrollTop - delta * 30)));
     $("body").stop().animate({
         scrollTop: $scrollTop + 'px'
     }, 2000, 'easeOutQuint', function() {
@@ -48,4 +43,3 @@ $(document).bind('DOMMouseScroll mousewheel', function(e, delta) {
     });
     return false;
 });
-*/
