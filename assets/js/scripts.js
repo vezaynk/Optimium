@@ -21,7 +21,10 @@ jQuery.extend(jQuery.easing, {
         return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
     }
 });
-
+var wheel = false,
+    $docH = $(document).height() - $(window).height(),
+    $scrollTop = $(window).scrollTop();
+    
 $(window).load(function(){
     
 var wheel = false,
@@ -29,10 +32,7 @@ var wheel = false,
     $scrollTop = $(window).scrollTop();
 });
 
-var wheel = false,
-    $docH = $(document).height() - $(window).height(),
-    $scrollTop = $(window).scrollTop();
-    
+
 $(window).bind('scroll', function() {
     if (wheel === false) {
         $scrollTop = $(this).scrollTop();
