@@ -21,24 +21,22 @@ jQuery.extend(jQuery.easing, {
         return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
     }
 });
-var wheel = false,
-    $docH = $(document).height() - $(window).height(),
-    $scrollTop = $(window).scrollTop();
-    
-$(window).load(function(){
-    
-var wheel = false,
-    $docH = $(document).height() - $(window).height(),
-    $scrollTop = $(window).scrollTop();
-});
 
 
+
+/*
 $(window).bind('scroll', function() {
+    var wheel = false,
+    $docH = $(document).height() - $(window).height(),
+    $scrollTop = $(window).scrollTop();
     if (wheel === false) {
         $scrollTop = $(this).scrollTop();
     }
 });
 $(document).bind('DOMMouseScroll mousewheel', function(e, delta) {
+    var wheel = false,
+    $docH = $(document).height() - $(window).height(),
+    $scrollTop = $(window).scrollTop();
     delta = delta || -e.originalEvent.detail / 3 || e.originalEvent.wheelDelta / 60;
     wheel = true;
 
@@ -50,3 +48,4 @@ $(document).bind('DOMMouseScroll mousewheel', function(e, delta) {
     });
     return false;
 });
+*/
