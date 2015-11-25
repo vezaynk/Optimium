@@ -14,9 +14,9 @@
 					<h1 class="post_title">{{{title}}}</h1>
 				</header>
 				<hr>
-				<div id="ad" style="text-align:center;width:100%;overflow:hidden;"> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9770282066229680" data-ad-slot="2269715452" data-ad-format="auto"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script></div>
 				{{! Post Image}}
 				<img src="{{image}}" width="100%" />
+				<div id="ad" style="text-align:center;width:100%;overflow:hidden;"> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9770282066229680" data-ad-slot="2269715452" data-ad-format="auto"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script></div>
 				{{! Body}}
 				{{content}}
 			</article>
@@ -41,10 +41,7 @@
 			</section>
 					
 			{{! Comment section, custom codes need to be inserted into ghost_foot in the settings.}}
-			<article class="post full_post" id="comments_Optimium">
-			{{ghost_foot}}
-			</article>
-			
+			<article class="post full_post" id="comments_Optimium">{{ghost_foot}}</article>
 			</div>
 	</main>
 {{/post}}
