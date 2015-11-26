@@ -7,15 +7,28 @@ then
    exit 1
 fi
 
+version=$1
+if [[ -n "$version" ]]; then
+	if [ $1 = "bleeding-edge" ]; then
+		echo "You are installing a custom build. Not link up with master, run 'bash optimium.sh'"
+	else
+		version="master"
+	fi
+else
+	version="master"
+fi
+
+echo $version
+
 echo "Installation started..."
 echo "Removing any previous Optimium installs..."
 rm -rf Optimium
 echo "Downloading Optimium from GitHub..."
-wget -q https://github.com/viruzx/Optimium/archive/master.zip
+wget -q https://github.com/viruzx/Optimium/archive/"$version".zip
 echo "Extracting Archive..."
-unzip -q master.zip
-rm master.zip
-mv Optimium-master Optimium
+unzip -q "$version".zip
+rm "$version".zip
+mv Optimium-"$version" Optimium
 echo "Attemping to restart Ghost..."
 echo "As a service.."
 service ghost restart 2>/dev/null
