@@ -21,7 +21,15 @@
 			<div class="left_side_article">
 			<div class="stamp"><span class="fa fa-clock-o"></span>
 			<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
-			<br><span>{{tags prefix=""}}</span>
+			<br>
+			{{! Output Tags}}
+			{{#if tags}}
+    		<span>
+    		{{#foreach tags}}
+        		<a href="{{url}}" class="tag-{{id}}">{{name}}</a>
+    		{{/foreach}}
+   			</span>
+ 			{{/if}}
 			</div>
 			</div>
 			<div class="image_container">
@@ -54,7 +62,15 @@
 			<div class="left_side_article">
 			<div class="stamp"><span class="fa fa-clock-o"></span>
 			<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
-			<br><span>{{tags prefix=""}}</span>
+			<br>
+			{{! Output Tags}}
+			{{#if tags}}
+    		<span>
+    		{{#foreach tags}}
+        		<a href="{{url}}" class="tag-{{id}}">{{name}}</a>
+    		{{/foreach}}
+   			</span>
+ 			{{/if}}
 			</div>
 			</div>
 			<div class="image_container">
@@ -97,7 +113,15 @@
 			<div class="left_side_article">
 			<div class="stamp"><span class="fa fa-clock-o"></span>
 			<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
-			<br><span>{{tags prefix=""}}</span>
+			<br>
+			{{! Output Tags}}
+			{{#if tags}}
+    		<span>
+    		{{#foreach tags}}
+        		<a href="{{url}}" class="tag-{{id}}">{{name}}</a>
+    		{{/foreach}}
+   			</span>
+ 			{{/if}}
 			</div>
 			</div>
 			<div class="image_container">
@@ -130,7 +154,15 @@
 			<div class="left_side_article">
 			<div class="stamp"><span class="fa fa-clock-o"></span>
 			<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
-			<br><span>{{tags prefix=""}}</span>
+			<br>
+			{{! Output Tags}}
+			{{#if tags}}
+    		<span>
+    		{{#foreach tags}}
+        		<a href="{{url}}" class="tag-{{id}}">{{name}}</a>
+    		{{/foreach}}
+   			</span>
+ 			{{/if}}
 			</div>
 			</div>
 			<div class="image_container">

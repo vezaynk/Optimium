@@ -516,3 +516,17 @@ article{
 #comments_Optimium:empty{
   display: none;
 }
+.stamp .tag-hidden a,
+.stamp .tag-custom a,
+.stamp .tag-private a,
+.stamp .tag-no-index a,
+.stamp .tag-no-home a,
+.stamp .tag-no-tag a,
+.stamp .tag-no-author a,
+.stamp .tag-index-only a,
+.stamp .tag-home-only a,
+.stamp .tag-author-only a,
+.stamp .tag-only a
+{
+display: none;
+}
