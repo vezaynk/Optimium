@@ -526,7 +526,9 @@ article{
 .stamp .tag-index-only a,
 .stamp .tag-home-only a,
 .stamp .tag-author-only a,
-.stamp .tag-only a
+.stamp .tag-tag-only a,
+.stamp .tag-link a,
+.stamp .tag-custom a
 {
 display: none;
 }
