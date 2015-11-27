@@ -86,7 +86,7 @@
 			
 	{{! Cycle through and list non-featured posts }}
 	{{! Only display if not blocked by exclusion tags }}
-	{{#foreach posts}}{{#if featured}}{{^has tag="hidden, no-home, tag-only, author-only, no-index, private"}}
+	{{#foreach posts}}{{^if featured}}{{^has tag="hidden, no-home, tag-only, author-only, no-index, private"}}
 				
 		
 		{{#has tag="link"}}
