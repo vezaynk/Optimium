@@ -421,10 +421,9 @@ tr:nth-child(2n){background-color:#f8f8f8}
 blockquote blockquote{padding:0px 10px !important;border-left:3px solid #bdbdbd !important;font-size:0.75em !important;margin-left:-15px !important;margin-bottom:-10px !important;}
 img[src=""]{display:none;}
 #shade{position:absolute;}
-.post{/* padding:0px 20px; */max-width: 760px;margin-top:20px;}
+.post{max-width: 760px;margin-top:20px;}
 .author_head{background-color:white;padding-top:20px;margin-top:-20px}
 @media(max-width:768px){.boxed-cargo{padding:0;}
-.full_post{/* margin-top:0; */}
 .author_head{background-color:white;padding-top:50px;margin-top:-50px}
 }
 .full_post{padding: 10px;}
