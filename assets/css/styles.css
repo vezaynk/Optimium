@@ -48,7 +48,7 @@ h6{font-family:"Raleway", serif;font-weight:400;}
 ::selection{color:#101010;text-shadow:none}
 #head_Optimium,
 #head_page_Optimium{height:90px;overflow:hidden;background-color:#000;-webkit-box-shadow:0 0 10px rgba(48, 48, 48, 0.7);-moz-box-shadow:0 0 10px rgba(48, 48, 48, 0.7);box-shadow:0 0 10px rgba(48, 48, 48, 0.7);position:relative;width:100%;z-index:40;background-attachment:fixed;background-position:bottom;}
-#head_Optimium #head_content_Optimium{color:#fff;padding:50px 0;text-align:center}
+#head_Optimium #head_content_Optimium{color:#fff;padding:50px 0 90px 0;text-align:center}
 #head_Optimium #head_content_Optimium img{height:auto;max-width:300px}
 #head_Optimium #head_content_Optimium h1{border:3px solid #fff;display:inline-block;font-family:"Roboto Condensed", sans-serif;font-weight:400;margin:0 30px;padding:0 15px}
 #head_Optimium #head_content_Optimium a{color:#fff;}
@@ -530,4 +530,17 @@ article{
 .stamp .tag-custom
 {
 display: none;
+}
+
+#arrow {
+    background: url(http://www.esprit.com/mobile-resources/data/images/specials/bohemian_blue/ButtonMobile_scroll_down.png);
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
