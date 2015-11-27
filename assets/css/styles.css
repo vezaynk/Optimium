@@ -515,19 +515,19 @@ article{
 #comments_Optimium:empty{
   display: none;
 }
-.stamp .tag-hidden a,
-.stamp .tag-custom a,
-.stamp .tag-private a,
-.stamp .tag-no-index a,
-.stamp .tag-no-home a,
-.stamp .tag-no-tag a,
-.stamp .tag-no-author a,
-.stamp .tag-index-only a,
-.stamp .tag-home-only a,
-.stamp .tag-author-only a,
-.stamp .tag-tag-only a,
-.stamp .tag-link a,
-.stamp .tag-custom a
+.stamp .tag-hidden,
+.stamp .tag-custom,
+.stamp .tag-private,
+.stamp .tag-no-index,
+.stamp .tag-no-home,
+.stamp .tag-no-tag,
+.stamp .tag-no-author,
+.stamp .tag-index-only,
+.stamp .tag-home-only,
+.stamp .tag-author-only,
+.stamp .tag-tag-only,
+.stamp .tag-link,
+.stamp .tag-custom
 {
 display: none;
 }
