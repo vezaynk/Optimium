@@ -2,100 +2,150 @@
 	<main id="content_Optimium" role="main">
 		<div id="content_column_Optimium" class="boxed-cargo">
 			<center>
-			{{!-- Featured posts --}}
-			{{#foreach posts}}{{#if featured}}
-			{{^has tag="hidden,home-only, no-index, tag-only, author-only, private"}}
-			{{#has tag="link"}}
-			{{!-- This is a link --}}
-			<article class="index_post {{post_class}}">
-				<div class="corner-ribbon top-right blue">Featured</div>
-				<div class="left_side_article">
-					<div class="stamp"><span class="fa fa-clock-o"></span>
-						<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
-						<br><span>{{tags prefix=""}}</span>
-					</div>
-				</div>
+			{{! Featured posts come first }}
+	{{! Cycle through and list featured posts }}
+	{{! Only display if not blocked by exclusion tags }}
+	{{#foreach posts}}{{#if featured}}{{^has tag="hidden, home-only, tag-only, author-only, no-index, private"}}
 				
-				<div class="image_container">
-					<img src="{{image}}" alt="Post Image" class="post_image"></div>
-					
-				<div class="right_side_article">
-					<header class="post_header">
-						<h2 class="post_title"><a href="{{excerpt}}">{{{title}}}</a></h2> {{#author}}
-						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
-					<p class="post_excerpt">{{excerpt characters="140"}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
-			</article>
-			
-			{{else}}
-			{{#has tag="custom"}}
-		{{content}}
-		{{else}}
-			<article class="index_post {{post_class}}">
-				<div class="corner-ribbon top-right blue">Featured</div>
-				
-				<div class="left_side_article">
-					<div class="stamp"><span class="fa fa-clock-o"></span>
-						<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
-						<br><span>{{tags prefix=""}}</span>
-					</div>
-				</div>
-				<div class="image_container">
-					<img src="{{image}}" alt="Post Image" class="post_image"></div>
-				<div class="right_side_article">
-					<header class="post_header">
-						<h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2> {{#author}}
-						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
-					<p class="post_excerpt">{{excerpt characters="140"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
-			</article>
-			{{/has}}
-			{{/has}}
-			{{/has}}
-			{{/if}}{{/foreach}}
-			
-			{{!-- Non-Featured posts --}}
-			{{#foreach posts}}{{#unless featured}}
-			{{^has tag="hidden,home-only"}}
-    {{#has tag="link"}}
-       {{!-- This is a link --}}
-	   <article class="index_post {{post_class}}">
-				<div class="left_side_article"> <span class="fa fa-clock-o"></span>
-					<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
-					<br><span>{{tags prefix=""}}</span> </div>
-					
-				<div class="image_container">
-					<img src="{{image}}" alt="Post Image" class="post_image"></div>
-				<div class="right_side_article">
-					<header class="post_header">
-						<h2 class="post_title"><a href="{{excerpt}}">{{{title}}}</a></h2> {{#author}}
-						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
-					<p class="post_excerpt">{{excerpt characters="140"}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
-			</article>
-	   
-    {{else}}
-        {{#has tag="custom"}}
-		{{content}}
-		{{else}}
-		<article class="index_post {{post_class}}">
-			
-				<div class="left_side_article"> <span class="fa fa-clock-o"></span>
-					<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
-					<br><span>{{tags prefix=""}}</span> </div>
-					<div class="image_container">
-					<img src="{{image}}" alt="Post Image" class="post_image">
-			</div>
-				<div class="right_side_article">
-					<header class="post_header">
-						<h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2> {{#author}}
-						<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
-					<p class="post_excerpt">{{excerpt characters="140"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
-			</article>
 		
-    {{/has}}
-    {{/has}}
-    {{/has}}
+		{{#has tag="link"}}
+		{{! Post type: Link}}
+		{{! Instead of a link to the post, they link to the body or the content of the post.}}
+			<article class="index_post {{post_class}}">
+				
+			{{! Featured Ribbon}}
+			{{#if featured}}
+			<div class="corner-ribbon top-right blue">Featured</div>
+			{{/if}}
+			
+			<div class="left_side_article">
+			<div class="stamp"><span class="fa fa-clock-o"></span>
+			<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+			<br><span>{{tags prefix=""}}</span>
+			</div>
+			</div>
+			<div class="image_container">
+			<img src="{{image}}" alt="Post Image" class="post_image"></div>
+			<div class="right_side_article">
+			<header class="post_header">
+			<h2 class="post_title"><a href="{{excerpt}}">{{{title}}}</a></h2> {{#author}}
+			<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
+			<p class="post_excerpt">{{excerpt characters="140"}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
+			</article>
+					
+		{{else}}
 			
 			
-			{{/unless}}{{/foreach}}
+		{{#has tag="custom"}}
+			{{! Post type: Custom}}
+			{{! Custom posts just spew out the body in parsed form. This is really for hacking the theme without resorting to modifying it}}
+			{{content}}
+		{{else}}
+		
+			{{! Post type: Default}}
+			{{! The post didn't match any special post types and is treated as a normal post'}}
+			<article class="index_post {{post_class}}">
+				
+			{{! Featured Ribbon}}
+			{{#if featured}}
+			<div class="corner-ribbon top-right blue">Featured</div>
+			{{/if}}
+			
+			<div class="left_side_article">
+			<div class="stamp"><span class="fa fa-clock-o"></span>
+			<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+			<br><span>{{tags prefix=""}}</span>
+			</div>
+			</div>
+			<div class="image_container">
+			<img src="{{image}}" alt="Post Image" class="post_image"></div>
+			<div class="right_side_article">
+			<header class="post_header">
+			<h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2> {{#author}}
+			<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
+			<p class="post_excerpt">{{excerpt characters="140"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
+			</article>
+			
+			{{/has}} {{! For link type }}
+			{{/has}} {{! For custom type }}
+			
+			{{/has}}{{/if}}{{/foreach}} {{! For validation}}
+			
+			
+			{{! ============================================================================================ }}
+			{{! ============================================================================================ }}
+			{{! ============================================================================================ }}
+			{{! ============================================================================================ }}
+			{{! ============================================================================================ }}
+			{{! ============================================================================================ }}
+			
+	{{! Cycle through and list non-featured posts }}
+	{{! Only display if not blocked by exclusion tags }}
+	{{#foreach posts}}{{^if featured}}{{^has tag="hidden, home-only, tag-only, author-only, no-index, private"}}
+				
+		
+		{{#has tag="link"}}
+		{{! Post type: Link}}
+		{{! Instead of a link to the post, they link to the body or the content of the post.}}
+			<article class="index_post {{post_class}}">
+				
+			{{! Featured Ribbon}}
+			{{#if featured}}
+			<div class="corner-ribbon top-right blue">Featured</div>
+			{{/if}}
+			
+			<div class="left_side_article">
+			<div class="stamp"><span class="fa fa-clock-o"></span>
+			<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+			<br><span>{{tags prefix=""}}</span>
+			</div>
+			</div>
+			<div class="image_container">
+			<img src="{{image}}" alt="Post Image" class="post_image"></div>
+			<div class="right_side_article">
+			<header class="post_header">
+			<h2 class="post_title"><a href="{{excerpt}}">{{{title}}}</a></h2> {{#author}}
+			<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
+			<p class="post_excerpt">{{excerpt characters="140"}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
+			</article>
+					
+		{{else}}
+			
+			
+		{{#has tag="custom"}}
+			{{! Post type: Custom}}
+			{{! Custom posts just spew out the body in parsed form. This is really for hacking the theme without resorting to modifying it}}
+			{{content}}
+		{{else}}
+		
+			{{! Post type: Default}}
+			{{! The post didn't match any special post types and is treated as a normal post'}}
+			<article class="index_post {{post_class}}">
+				
+			{{! Featured Ribbon}}
+			{{#if featured}}
+			<div class="corner-ribbon top-right blue">Featured</div>
+			{{/if}}
+			
+			<div class="left_side_article">
+			<div class="stamp"><span class="fa fa-clock-o"></span>
+			<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+			<br><span>{{tags prefix=""}}</span>
+			</div>
+			</div>
+			<div class="image_container">
+			<img src="{{image}}" alt="Post Image" class="post_image"></div>
+			<div class="right_side_article">
+			<header class="post_header">
+			<h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2> {{#author}}
+			<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
+			<p class="post_excerpt">{{excerpt characters="140"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
+			</article>
+			
+			{{/has}} {{! For link type }}
+			{{/has}} {{! For custom type }}
+			
+			{{/has}}{{/if}}{{/foreach}} {{! For validation}}
 			 </div>
 	</main>
 	
