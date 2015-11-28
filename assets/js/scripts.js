@@ -2,8 +2,6 @@
 
 $("#shade").css({opacity:0.15+(e/960)})}scrollIntervalID=setInterval(b,10);$("article").fitVids();$("pre").addClass("prettyprint");prettyPrint()})();
 
-//$(window).on('resize orientationChange load',function(event){try { var h=document.getElementById("head_Optimium").offsetHeight;document.getElementById("shade").style.height=h+"px"; }catch(err) {}});
-
 tiles=$("section, .index_post, content_Optimium .pagination, p, li").fadeTo(0,0);
 $(window).scroll(function(d,h){
 	tiles.each(function(i){
