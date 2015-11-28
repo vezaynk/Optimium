@@ -571,3 +571,6 @@ display: none;
   50%  { opacity:0.5; }
   100% { opacity:1; }
 }
+#page_shade{
+  width: 100%; opacity: 0.15; height: 100%; background-color: black;
+}
