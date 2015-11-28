@@ -22,6 +22,8 @@ jQuery.extend(jQuery.easing, {
     }
 });
 
+
+/* Disabled Smooth Scroll
 var wheel = false,
     $docH = $(document).height() - $(window).height(),
     $scrollTop = $(window).scrollTop();
@@ -42,7 +44,7 @@ $(document).bind('DOMMouseScroll mousewheel', function(e, delta) {
         wheel = false;
     });
     return false;
-});
+}); */
 
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
