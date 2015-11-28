@@ -532,15 +532,42 @@ article{
 display: none;
 }
 
-#arrow {
-    
-    background-repeat: no-repeat;
-    width: 75px;
-    height: 75px;
-    background-size: cover;
+#arrow{
     position: absolute;
-    bottom: 5px;
     left: 0;
     right: 0;
+    bottom: 20px;
     margin: auto;
+    height: 30px;
+    width: 30px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    transform: rotate(45deg);
+    border-top: none;
+    border-left: none;
+    -webkit-animation: flickerAnimation 1s infinite;
+    -moz-animation: flickerAnimation 1s infinite;
+    -o-animation: flickerAnimation 1s infinite;
+    /* animation: flickerAnimation 1s infinite; */
+}
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0.5; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0.5; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0.5; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0.5; }
+  100% { opacity:1; }
 }
