@@ -60,3 +60,11 @@ $(function() {
     }
   });
 });
+$(document).ready(function() {
+   var baloon = $('#arrow');
+     function runIt() {
+       baloon.animate({opacity:'1'}, 500);
+       baloon.animate({opacity:'0.5'}, 500, runIt);
+    }
+    runIt();
+});

@@ -546,30 +546,6 @@ display: none;
     transform: rotate(45deg);
     border-top: none;
     border-left: none;
-    -webkit-animation: flickerAnimation 1s infinite;
-    -moz-animation: flickerAnimation 1s infinite;
-    -o-animation: flickerAnimation 1s infinite;
-    /* animation: flickerAnimation 1s infinite; */
-}
-@keyframes flickerAnimation {
-  0%   { opacity:1; }
-  50%  { opacity:0.5; }
-  100% { opacity:1; }
-}
-@-o-keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:0.5; }
-  100% { opacity:1; }
-}
-@-moz-keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:0.5; }
-  100% { opacity:1; }
-}
-@-webkit-keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:0.5; }
-  100% { opacity:1; }
 }
 #page_shade{
   width: 100%; opacity: 0.15; height: 100%; background-color: black;position: absolute;
