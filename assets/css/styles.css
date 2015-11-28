@@ -572,5 +572,5 @@ display: none;
   100% { opacity:1; }
 }
 #page_shade{
-  width: 100%; opacity: 0.15; height: 100%; background-color: black;
+  width: 100%; opacity: 0.15; height: 100%; background-color: black;position: absolute;
 }
