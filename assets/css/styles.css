@@ -75,7 +75,7 @@ h6{font-family:"Raleway", serif;font-weight:400;}
 #content_column_Optimium .author_head{padding-bottom:40px;position:relative;text-align:center}
 #content_column_Optimium .author_head h1{font-family:"Roboto", sans-serif;font-size:1.2em;font-weight:700;line-height:1em;margin:0}
 #content_column_Optimium .author_head img{border-radius:50%;height:120px;margin:20px;width:auto}
-#content_column_Optimium .author_head .website{color:#303030;font-size:.7em;font-weight:700;margin:0;-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}
+#content_column_Optimium .author_head .website{color:#303030;font-size:.7em;font-weight:700;margin:0;-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease;text-decoration: none;}
 #content_column_Optimium .author_head .website:hover{color:#bdbdbd}
 #content_column_Optimium .author_head p{display:inline-block;font-size:.8em;line-height:1.2em;max-width:75%; width:550px}
 #content_column_Optimium .author_head .fa-file{color:#bdbdbd;font-size:.6em;margin-left:10px}
