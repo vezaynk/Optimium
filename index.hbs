@@ -8,7 +8,7 @@
 	{{#foreach posts}}{{#if featured}}{{^has tag="hidden, home-only, tag-only, author-only, no-index, private"}}
 				
 		
-		{{#has tag="link"}}
+		{{#has tag="type-link"}}
 		{{! Post type: Link}}
 		{{! Instead of a link to the post, they link to the body or the content of the post.}}
 			<article class="index_post {{post_class}}">
@@ -44,7 +44,7 @@
 		{{else}}
 			
 			
-		{{#has tag="custom"}}
+		{{#has tag="type-custom"}}
 			{{! Post type: Custom}}
 			{{! Custom posts just spew out the body in parsed form. This is really for hacking the theme without resorting to modifying it}}
 			{{content}}
@@ -100,7 +100,7 @@
 	{{#foreach posts}}{{^if featured}}{{^has tag="hidden, home-only, tag-only, author-only, no-index, private"}}
 				
 		
-		{{#has tag="link"}}
+		{{#has tag="type-link"}}
 		{{! Post type: Link}}
 		{{! Instead of a link to the post, they link to the body or the content of the post.}}
 			<article class="index_post {{post_class}}">
@@ -136,7 +136,7 @@
 		{{else}}
 			
 			
-		{{#has tag="custom"}}
+		{{#has tag="type-custom"}}
 			{{! Post type: Custom}}
 			{{! Custom posts just spew out the body in parsed form. This is really for hacking the theme without resorting to modifying it}}
 			{{content}}

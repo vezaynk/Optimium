@@ -516,7 +516,6 @@ article{
   display: none;
 }
 .stamp .tag-hidden,
-.stamp .tag-custom,
 .stamp .tag-private,
 .stamp .tag-no-index,
 .stamp .tag-no-home,
@@ -527,7 +526,9 @@ article{
 .stamp .tag-author-only,
 .stamp .tag-tag-only,
 .stamp .tag-link,
+.stamp .tag-type-link,
 .stamp .tag-custom
+.stamp .tag-type-custom
 {
 display: none;
 }
