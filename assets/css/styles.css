@@ -32,7 +32,7 @@
 /* Set defaults to be inherited */
 body{
   overflow-x:hidden;
-  background-color:#fff;
+  background-color: #f7f7f7;
   font: 20px/34px Roboto, sans-serif;
   text-rendering:optimizeLegibility;
 }
@@ -553,4 +553,7 @@ display: none;
 }
 #author_Optimium h4 a {
     text-decoration: none;
+}
+#content_column_Optimium {
+    padding-top: 50px;
 }
