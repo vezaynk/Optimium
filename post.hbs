@@ -1,8 +1,14 @@
 {{#post}}
+{{#has tag="type-link"}}
+<script>
+	window.location = "{{content}}";
+</script>
+{{/has}}
 {{! Import Default Template}}
 {{!< default}}
 {{! Header for pages}}
 {{> header_page}}
+
 		<div id="content_column_Optimium" class="boxed-cargo">
 			<center>
 				
