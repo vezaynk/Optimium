@@ -30,7 +30,11 @@
 			<header class="post_header">
 			<h2 class="post_title"><a href="{{excerpt}}">{{{title}}}</a></h2> {{#author}}
 			<h5 style="margin-top: 10px;">Link by <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
-			<a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
+			<a href="{{excerpt}}" class="read_more_btn">Go There</a>
+			{{#has tag="type-raw"}}
+			{{content}}
+			{{/has}}
+			 </div>
 			</article>
 					
 		{{else}}
@@ -73,7 +77,12 @@
 			<header class="post_header">
 			<h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2> {{#author}}
 			<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
-			<p class="post_excerpt">{{excerpt characters="140"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
+			{{#has tag="type-raw"}}
+			{{content}}
+			{{else}}
+			<p class="post_excerpt">{{excerpt characters="140"}}&hellip;</p> 
+			{{/has}}
+			<a href="{{url}}" class="read_more_btn">Read More</a> </div>
 			</article>
 			
 			{{/has}} {{! For link type }}
