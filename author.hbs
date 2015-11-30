@@ -20,24 +20,14 @@
         {{! Featured posts come first }}
 	{{! Cycle through and list featured posts }}
 	{{! Only display if not blocked by exclusion tags }}
-	{{#foreach posts}}{{#if featured}}{{^has tag="hidden, no-author, tag-only, home-only, index-only, private"}}
+	{{#foreach posts}}{{^has tag="hidden, no-author, tag-only, home-only, index-only, private"}}
 				
 		
 		{{>listing}}
 			
-			{{/has}}{{/if}}{{/foreach}} {{! For validation}}
+			{{/has}}{{/foreach}} {{! For validation}}
 			
 			
-			
-	{{! Cycle through and list non-featured posts }}
-	{{! Only display if not blocked by exclusion tags }}
-	{{#foreach posts}}{{^if featured}}{{^has tag="hidden, no-author, tag-only, home-only, index-only, private"}}
-				
-		
-		{{>listing}}
-			
-			{{/has}}{{/if}}{{/foreach}} {{! For validation}}
-
         
 
 

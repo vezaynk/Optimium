@@ -1,25 +1,16 @@
 {{!< default}}{{> header_page}}
 		<div id="content_column_Optimium" class="boxed-cargo Optimium_index">
 			<center>
-			{{! Featured posts come first }}
-	{{! Cycle through and list featured posts }}
-	{{! Only display if not blocked by exclusion tags }}
-	{{#foreach posts}}{{#if featured}}{{^has tag="hidden, home-only, tag-only, author-only, no-index, private"}}
-				
-		
-		{{>listing}}
-			
-			{{/has}}{{/if}}{{/foreach}} {{! For validation}}
-			
-			
+
+					
 	{{! Cycle through and list non-featured posts }}
 	{{! Only display if not blocked by exclusion tags }}
-	{{#foreach posts}}{{^if featured}}{{^has tag="hidden, home-only, tag-only, author-only, no-index, private"}}
+	{{#foreach posts}}{{^has tag="hidden, home-only, tag-only, author-only, no-index, private"}}
 				
 		
 		{{>listing}}
 			
-			{{/has}}{{/if}}{{/foreach}} {{! For validation}}
+			{{/has}}{{/foreach}} {{! For validation}}
 			 </div>
 	
 	{{pagination}}

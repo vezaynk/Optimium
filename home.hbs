@@ -6,23 +6,20 @@
 <div id="content_column_Optimium" class="home-listing boxed-cargo Optimium_home">
 <center>
 				
-	{{! Featured posts come first }}
-	{{! Cycle through and list featured posts }}
-	{{! Only display if not blocked by exclusion tags }}
-	{{#foreach posts}}{{#if featured}}{{^has tag="hidden, no-home, tag-only, author-only, no-index, private"}}
-				
-	{{>listing}}
-			
-	{{/has}}{{/if}}{{/foreach}} {{! For validation}}
+	{{#get "posts" filter="featured:true" limit="15" as |featured|}}
+    {{#foreach featured}}
+    <li><a href="{{url}}">{{title}}</a></li>
+    {{>listing}}
+{{/get}}
 			
 		
 	{{! Cycle through and list non-featured posts }}
 	{{! Only display if not blocked by exclusion tags }}
-	{{#foreach posts}}{{^if featured}}{{^has tag="hidden, no-home, tag-only, author-only, no-index, private"}}
+	{{#foreach posts}}{{^has tag="hidden, no-home, tag-only, author-only, no-index, private"}}
 				
 	{{>listing}}
 			
-	{{/has}}{{/if}}{{/foreach}} {{! For validation}}
+	{{/has}}{{/foreach}} {{! For validation}}
 			
 </div>
 {{pagination}}
