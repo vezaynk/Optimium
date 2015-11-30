@@ -1,0 +1,80 @@
+{{#has tag="type-link"}}
+		{{! Post type: Link}}
+		{{! Instead of a link to the post, they link to the body or the content of the post.}}
+			<article class="index_post {{post_class}}">
+				
+			{{! Featured Ribbon}}
+			{{#if featured}}
+			<div class="corner-ribbon top-right blue">Featured</div>
+			{{/if}}
+			
+			<div class="left_side_article">
+			<div class="stamp"><span class="fa fa-clock-o"></span>
+			<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+			<br>
+			
+			{{! Output Tags}}
+			{{#if tags}}
+    		<span>
+    		{{#foreach tags}}
+        		<a href="{{url}}" class="tag-{{name}}">{{name}}</a>
+    		{{/foreach}}
+   			</span>
+ 			{{/if}}
+			 
+			</div>
+			</div>
+			<div class="image_container">
+			<img src="{{image}}" alt="Post Image" class="post_image"></div>
+			<div class="right_side_article">
+			<header class="post_header">
+			<h2 class="post_title"><a href="{{excerpt}}">{{{title}}}</a></h2> {{#author}}
+			<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
+			<p class="post_excerpt">{{excerpt characters="140"}}</p> <a href="{{excerpt}}" class="read_more_btn">Go There</a> </div>
+			</article>
+					
+		{{else}}
+			
+			
+		{{#has tag="type-custom"}}
+			{{! Post type: Custom}}
+			{{! Custom posts just spew out the body in parsed form. This is really for hacking the theme without resorting to modifying it}}
+			{{content}}
+		{{else}}
+		
+			{{! Post type: Default}}
+			{{! The post didn't match any special post types and is treated as a normal post'}}
+			<article class="index_post {{post_class}}">
+				
+			{{! Featured Ribbon}}
+			{{#if featured}}
+			<div class="corner-ribbon top-right blue">Featured</div>
+			{{/if}}
+			
+			<div class="left_side_article">
+			<div class="stamp"><span class="fa fa-clock-o"></span>
+			<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+			<br>
+			
+			{{! Output Tags}}
+			{{#if tags}}
+    		<span>
+    		{{#foreach tags}}
+        		<a href="{{url}}" class="tag-{{name}}">{{name}}</a>
+    		{{/foreach}}
+   			</span>
+ 			{{/if}}
+			 
+			</div>
+			</div>
+			<div class="image_container">
+			<img src="{{image}}" alt="Post Image" class="post_image"></div>
+			<div class="right_side_article">
+			<header class="post_header">
+			<h2 class="post_title"><a href="{{url}}">{{{title}}}</a></h2> {{#author}}
+			<h5 style="margin-top: 10px;">By <a href="{{url}}">{{name}}</a></h5> {{/author}} </header>
+			<p class="post_excerpt">{{excerpt characters="140"}}&hellip;</p> <a href="{{url}}" class="read_more_btn">Read More</a> </div>
+			</article>
+			
+			{{/has}} {{! For link type }}
+			{{/has}} {{! For custom type }}
