@@ -8,15 +8,6 @@ then
 fi
 
 version=$1
-if [[ -n "$version" ]]; then
-	if [ $1 = "bleeding-edge" ]; then
-		echo "You are installing a custom build."
-	else
-		version="master"
-	fi
-else
-	version="master"
-fi
 
 echo $version
 

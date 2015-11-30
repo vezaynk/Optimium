@@ -7,9 +7,9 @@ Optimium is a responsive material design theme based on Willsong and Casper supp
 This theme is currently in active development. It is **not** complete and is updated frequently. Keep that in mind.
 
 ![Optimium Demo](https://www.knyz.org/content/images/2015/11/Optimium--1-.png)
-![Ghost Version](https://img.shields.io/badge/Ghost-0.7.x-brightgreen.svg?style=flat-square)
+![Ghost Version](https://img.shields.io/badge/Ghost-0.7.2-brightgreen.svg?style=flat-square)
 ![Optimium Version](https://img.shields.io/badge/Version-Alpha%20(pre--5.0.0)-yellow.svg?style=flat-square)
-![ReadMe last updated](https://img.shields.io/badge/ReadMe-28/11/2015-blue.svg?style=flat-square)
+![ReadMe last updated](https://img.shields.io/badge/ReadMe-29/11/2015-blue.svg?style=flat-square)
 
 #Installation
 There are currently two branches: `master` and `bleeding-edge` while new ones are yet to come such as `beta`, `nightly` and `dev`.
@@ -70,6 +70,8 @@ Meaning that using `tag-only` and `author-only` will **not** give you the result
 `type-link`: Adding this tag converts the post into a link. The link data is taken from the post's body. Meaning that to link to `http://example.com`, the post's body will have to be `http://example.com` and **nothing else**.
 
 `type-custom`: The body is outputted completely in the index in `HTML` form. This means that you can enter any `html` you like into the body and it will be outputted instead of the card.
+
+`type-raw`: On index pages, the body of the post is outputted instead of the excerpt.
 
 #Best Practices
 ##Comments
