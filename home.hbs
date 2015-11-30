@@ -3,7 +3,7 @@
 
 
 <a name="start"></a>
-<div id="content_column_Optimium" class="home-listing boxed-cargo">
+<div id="content_column_Optimium" class="home-listing boxed-cargo Optimium_home">
 <center>
 				
 	{{! Featured posts come first }}
@@ -11,27 +11,18 @@
 	{{! Only display if not blocked by exclusion tags }}
 	{{#foreach posts}}{{#if featured}}{{^has tag="hidden, no-home, tag-only, author-only, no-index, private"}}
 				
+	{{>listing}}
+			
+	{{/has}}{{/if}}{{/foreach}} {{! For validation}}
+			
 		
-		{{>listing}}
-			
-			{{/has}}{{/if}}{{/foreach}} {{! For validation}}
-			
-			
-			{{! ============================================================================================ }}
-			{{! ============================================================================================ }}
-			{{! ============================================================================================ }}
-			{{! ============================================================================================ }}
-			{{! ============================================================================================ }}
-			{{! ============================================================================================ }}
-			
 	{{! Cycle through and list non-featured posts }}
 	{{! Only display if not blocked by exclusion tags }}
 	{{#foreach posts}}{{^if featured}}{{^has tag="hidden, no-home, tag-only, author-only, no-index, private"}}
 				
-		
-		{{>listing}}
+	{{>listing}}
 			
-			{{/has}}{{/if}}{{/foreach}} {{! For validation}}
+	{{/has}}{{/if}}{{/foreach}} {{! For validation}}
 			
-			 </div>
-			 {{pagination}}
+</div>
+{{pagination}}
