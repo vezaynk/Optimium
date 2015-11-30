@@ -1,3 +1,6 @@
+#Archived
+This version of the theme is ARCHIVED meaning that it is here solely for historical purposes. It stopped at commit `#110` at build `9922ede` since eventually we will be taking advantage of the `{{#get}}` handler which is supported only by Ghost 7.2 and up.
+
 ##ReadMe
 [The ReadMe is also available at KNYZ Labs.](https://www.knyz.org/readme/)
 
@@ -9,7 +12,7 @@ This theme is currently in active development. It is **not** complete and is upd
 ![Optimium Demo](https://www.knyz.org/content/images/2015/11/Optimium--1-.png)
 ![Ghost Version](https://img.shields.io/badge/Ghost-0.7.x-brightgreen.svg?style=flat-square)
 ![Optimium Version](https://img.shields.io/badge/Version-Alpha%20(pre--5.0.0)-yellow.svg?style=flat-square)
-![ReadMe last updated](https://img.shields.io/badge/ReadMe-28/11/2015-blue.svg?style=flat-square)
+![ReadMe last updated](https://img.shields.io/badge/ReadMe-29/11/2015-blue.svg?style=flat-square)
 
 #Installation
 There are currently two branches: `master` and `bleeding-edge` while new ones are yet to come such as `beta`, `nightly` and `dev`.
