@@ -525,10 +525,10 @@ article{
 .stamp .tag-home-only,
 .stamp .tag-author-only,
 .stamp .tag-tag-only,
-.stamp .tag-link,
 .stamp .tag-type-link,
-.stamp .tag-custom
-.stamp .tag-type-custom
+.stamp .tag-type-custom,
+.stamp .tag-type-raw,
+.stamp .tag-no-feature
 {
 display: none;
 }

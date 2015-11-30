@@ -73,6 +73,8 @@ Meaning that using `tag-only` and `author-only` will **not** give you the result
 
 `type-raw`: On index pages, the body of the post is outputted instead of the excerpt.
 
+`no-feature`: The post won't be imported on the homepage as a feature post if it's featured.
+
 #Best Practices
 ##Comments
 Our recommended commenting system is [Muut](https://muut.com).
