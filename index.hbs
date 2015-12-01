@@ -5,12 +5,12 @@
 					
 	{{! Cycle through and list non-featured posts }}
 	{{! Only display if not blocked by exclusion tags }}
-	{{#foreach posts}}{{^has tag="hidden, home-only, tag-only, author-only, no-index, private"}}
+	{{#foreach posts}}{{^if featured}}{{^has tag="hidden, home-only, tag-only, author-only, no-index, private"}}
 				
 		
 		{{>listing}}
 			
-			{{/has}}{{/foreach}} {{! For validation}}
+			{{/has}}{{/if}}{{/foreach}} {{! For validation}}
 			 </div>
 	
 	{{pagination}}

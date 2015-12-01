@@ -8,7 +8,7 @@
 				
 	{{#get "posts" filter="featured:true" limit="15" as |featured|}}
     {{#foreach featured}}
-	{{^has tag="hidden, no-home, tag-only, author-only, no-index, private, no-feature"}}
+	{{^has tag="hidden, no-home, tag-only, author-only, no-index, private"}}
     {{>listing}}
 	{{/has}}
     {{/foreach}}
@@ -18,11 +18,11 @@
 		
 	{{! Cycle through and list non-featured posts }}
 	{{! Only display if not blocked by exclusion tags }}
-	{{#foreach posts}}{{^has tag="hidden, no-home, tag-only, author-only, no-index, private"}}
+	{{#foreach posts}}{{^if featured}}{{^has tag="hidden, no-home, tag-only, author-only, no-index, private"}}
 				
 	{{>listing}}
 			
-	{{/has}}{{/foreach}} {{! For validation}}
+	{{/has}}{{/if}}{{/foreach}} {{! For validation}}
 			
 </div>
 {{pagination}}
