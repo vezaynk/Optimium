@@ -6,8 +6,9 @@ then
 /path/to/ghost/content/themes)"
    exit 1
 fi
+version=0
+if [ -z "$1" ]; then version="master"; else version=$1; fi
 
-version=$1
 
 echo $version
 
