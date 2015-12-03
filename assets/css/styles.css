@@ -52,7 +52,7 @@ h6{font-family:"Raleway", serif;font-weight:400;}
 #head_Optimium #head_content_Optimium img{height:auto;width: 300px;max-width: 90%;}
 #head_Optimium #head_content_Optimium h1{border:3px solid #fff;display:inline-block;font-family:"Roboto Condensed", sans-serif;font-weight:400;margin:0 30px;padding:0 15px}
 #head_Optimium #head_content_Optimium a{color:#fff;}
-#head_Optimium #head_content_Optimium #blog_description{display:inline-block;font-family:"Raleway", serif;margin:0 30px;width: 820px;max-width: 90%;}
+#head_Optimium #head_content_Optimium #blog_description{display:inline-block;font-family:"Raleway", serif;margin: 0;width: 820px;max-width: 90%;}
 #menu_Optimium{font-family: "Roboto", sans-serif;font-size:.9em;padding:20px 0;position:relative}
 #menu_Optimium ul{margin:0;padding:0;list-style:none}
 #menu_Optimium ul li{display:inline-block;margin:0 5px;vertical-align:top}
