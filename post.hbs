@@ -14,6 +14,22 @@
 				
 			{{! Actual Post}}
 			<article class="{{post_class}} full_post Optimium_Post">
+				<div class="left_side_article">
+			<div class="stamp"><span class="fa fa-clock-o"></span>
+			<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+			<br>
+			
+			{{! Output Tags}}
+			{{#if tags}}
+    		<span>
+    		{{#foreach tags}}
+        		<a href="{{url}}" class="tag-{{name}}">{{name}}</a>
+    		{{/foreach}}
+   			</span>
+ 			{{/if}}
+			 
+			</div>
+			</div>
 				<header class="reading_post_header">
 					<h1 class="post_title">{{{title}}}</h1>
 				</header>
