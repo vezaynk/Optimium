@@ -4,6 +4,11 @@
 	window.location = "{{excerpt}}";
 </script>
 {{/has}}
+{{#has tag="type-custom"}}
+{{content}}
+{{else}}
+
+
 {{! Import Default Template}}
 {{!< default}}
 {{! Header for pages}}
@@ -63,4 +68,5 @@
 			{{! Comment section, custom codes need to be inserted into ghost_foot in the settings.}}
 			<article class="post full_post" id="comments_Optimium">{{ghost_foot}}</article>
 			</div>
+			{{/has}}
 {{/post}}
