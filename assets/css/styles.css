@@ -26,7 +26,7 @@
 
 /* Color Selection */
 ::selection{
-  background:rgba(0, 0, 0, 0.1);
+  background: rgba(0,100,250,0.20);
 }
 
 /* Set defaults to be inherited */
@@ -556,4 +556,7 @@ display: none;
 }
 #content_column_Optimium {
     padding-top: 50px;
+}
+.m-slogan{
+  display: none !important;
 }
