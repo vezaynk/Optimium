@@ -2,7 +2,7 @@
 
 $("#shade").css({opacity:0.15+(e/960)})}scrollIntervalID=setInterval(b,10);$("article").fitVids();$("pre").addClass("prettyprint");prettyPrint()})();
 
-tiles=$("section, .index_post, .pagination, p, li").fadeTo(0,0);
+tiles=$("article").fadeTo(0,0);
 $(window).scroll(function(d,h){
 	tiles.each(function(i){
 		a=$(this).offset().top+$(this).height()/3;
