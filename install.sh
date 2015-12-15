@@ -1,5 +1,5 @@
 curpath=`pwd`
-if ! [[ $curpath =~ .*/ghost/content/themes.* ]]
+if ! [[ $curpath =~ .*/content/themes.* ]]
 then
    echo "Install path is not valid."
    echo "Move to you themes directory (e.g. 
