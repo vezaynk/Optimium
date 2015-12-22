@@ -70,7 +70,7 @@ h6{font-family:"Raleway", serif;font-weight:400;}
 #content_Optimium{background-color:#F7F7F7;padding:50px 0;position:relative;width:100%;z-index:30;}
 #content_column_Optimium .archive_head{border-bottom:1px solid #bdbdbd;position:relative}
 #content_column_Optimium .archive_head h1{color:#bdbdbd;font-family:"Roboto", sans-serif;font-size:1em;line-height:30px;padding-bottom:20px}
-#content_column_Optimium .archive_head .fa-rss{border:1px solid #bdbdbd;border-radius:3px;color:#bdbdbd;font-size:.8em;font-weight:700;line-height:30px;padding:0 10px;position:absolute;right:0;text-decoration:none;top:0;-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}
+#content_column_Optimium .archive_head .fa-rss{display: block; border:1px solid #bdbdbd;border-radius:3px;color:#bdbdbd;font-size:.8em;font-weight:700;line-height:30px;padding:0 10px;position:absolute;right:0;text-decoration:none;top:0;-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}
 #content_column_Optimium .archive_head .fa-rss:hover{background-color:#303030;border-color:#303030;color:#fff}
 #content_column_Optimium .author_head{padding-bottom:0;position:relative;text-align:center}
 #content_column_Optimium .author_head h1{font-family:"Roboto", sans-serif;font-size:1.2em;font-weight:700;line-height:1em;margin:0}
