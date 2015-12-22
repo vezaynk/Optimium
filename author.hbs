@@ -7,9 +7,9 @@
     <div id="content_column_Optimium" class="Optimium_index boxed-cargo Optimium_author">
 		<center>
             {{#author}}
-        <article class="author_head">
+        <article class="author_head" style="background-image: url({{cover}});background-size: cover; background-color: #545454;">
             
-            <div class="author_info" style="background-image: url({{cover}});background-size: cover; background-color: #545454;{{^if cover}} width:100%;{{/if}}">
+            <div class="author_info" style="{{^if cover}} width:100%;{{/if}}">
                 
                
                 <img src="{{image}}" alt="{{name}}">
