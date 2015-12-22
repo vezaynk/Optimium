@@ -8,7 +8,10 @@
 		<center>
             {{#author}}
         <article class="author_head">
-            <div class="author_info" style="background-image: url({{cover}});background-size: cover;">
+            
+            <div class="author_info" style="background-image: url({{cover}});background-size: cover;{{^if image}} width:100%; background-color: #545454;{{/if}}">
+                
+               
                 <img src="{{image}}" alt="{{name}}">
                 <h1>{{name}}</h1>
                 <a class="website" href="{{website}}"><span class="fa fa-link"></span> {{website}}</a> <br>
