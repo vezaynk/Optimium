@@ -6,16 +6,18 @@
 
     <div id="content_column_Optimium" class="Optimium_index boxed-cargo Optimium_author">
 		<center>
-        <article class="author_head">
             {{#author}}
-                <img src="{{image}}" alt="{{name}}" class="img-square-frame-circle">
+        <article class="author_head">
+            <div class="author_info" style="background-image: url({{cover}});background-size: cover;">
+                <img src="{{image}}" alt="{{name}}">
                 <h1>{{name}}</h1>
                 <a class="website" href="{{website}}"><span class="fa fa-link"></span> {{website}}</a> <br>
                 <p>{{bio}}</p> <br>
                 <span class="fa fa-file"> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span> 
                 <a class="fa fa-rss" href="{{url}}rss/"> follow</a>
-            {{/author}}
+            </div>
         </article>
+            {{/author}}
 
         {{! Featured posts come first }}
 	{{! Cycle through and list featured posts }}

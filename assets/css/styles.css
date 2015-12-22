@@ -564,3 +564,13 @@ display: none;
 .m-slogan{
   display: none !important;
 }
+.author_info {
+    width: 300px;
+    background: rgba(5,5,5,0.5);
+    border-right-width: 1px;
+    height: 100%;
+    border-right-style: solid;
+    border-right-color: #000;
+    max-width: 100%;
+    color: white;
+}
