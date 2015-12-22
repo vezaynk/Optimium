@@ -21,20 +21,9 @@ echo "Extracting Archive..."
 unzip -q "$version".zip
 rm "$version".zip
 mv Optimium-"$version" Optimium
-echo "Attemping to restart Ghost..."
-echo "As a service.."
-service ghost restart 2>/dev/null
-echo "As a forever script.."
-cd ../..
-forever stop index.js 2>/dev/null
-forever start index.js 2>/dev/null
-cd content/themes/
-echo "Using SuperVisor.."
-supervisorctl stop ghost 2>/dev/null
-supervisorctl start ghost 2>/dev/null
 echo "Creating update script"
 cp Optimium/install.sh optimium.sh
 echo "Done!"
-echo "You may need to now restart Ghost to have it as an option."
+echo "You need to now restart Ghost to have it as an option."
 echo "Run this script occasionally to make sure you have the latest build."
 echo "To update theme just run optimium.sh in this directory."
