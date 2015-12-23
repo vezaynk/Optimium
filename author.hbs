@@ -11,8 +11,11 @@
             
             <div class="author_info" style="{{^if cover}} width:100%;{{/if}}">
                 
-               
+               {{#if image}}
                 <img src="{{image}}" alt="{{name}}">
+                {{else}}
+                <img src="{{asset "img/unknown.png"}}" alt="{{name}}">
+                {{/if}}
                 <h1>{{name}}</h1>
                 {{#if website}}
                 <a class="website" href="{{website}}"><span class="fa fa-link"></span> {{website}}</a>
