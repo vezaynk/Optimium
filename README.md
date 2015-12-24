@@ -6,7 +6,6 @@ Optimium is a responsive material design theme based on Willsong and Casper supp
 ##Preview
 This theme is currently in active development. It is **not** complete and is updated frequently. Keep that in mind.
 
-![Optimium Demo](https://www.knyz.org/content/images/2015/11/Optimium--1-.png)
 ![Ghost Version](https://img.shields.io/badge/Ghost-0.7.2-brightgreen.svg?style=flat-square)
 ![Optimium Version](https://img.shields.io/badge/Version-Alpha%20(pre--5.0.0)-yellow.svg?style=flat-square)
 ![ReadMe last updated](https://img.shields.io/badge/ReadMe-29/11/2015-blue.svg?style=flat-square)
@@ -15,6 +14,8 @@ This theme is currently in active development. It is **not** complete and is upd
 There are currently two branches: `master` and `bleeding-edge` while new ones are yet to come such as `beta`, `nightly` and `dev`.
 
 ##Master Install
+Use this branch as much as possible. Often we will skip the commits to `bleeding-edge` and go directly to `master` thus making it more up-to-date than the beta branches.
+
 Master is the tested and stable branch which will be updated by versions after the release instead of the make-shift merges we have now. (The reason for the makeshift merges right now is because we want to push bug fixes and such as soon as possible, sometimes a few per day).
 
 To install from `master` do the following:
@@ -74,6 +75,8 @@ Meaning that using `tag-only` and `author-only` will **not** give you the result
 `type-raw`: On index pages, the body of the post is outputted instead of the excerpt.
 
 #Best Practices
+##Fill out all blog details
+This includes authors' information. The theme currently doesn't handle lack of data very well and author pages will give you a generic icon instead of your image if you don't have one.
 ##Comments
 Our recommended commenting system is [Muut](https://muut.com).
 
