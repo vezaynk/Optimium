@@ -81,7 +81,7 @@ h6{font-family:"Raleway", serif;font-weight:400;}
 #content_column_Optimium .author_head .fa-file{color:#bdbdbd;font-size:.6em;margin-left:10px}
 #content_column_Optimium .author_head .fa-rss{border-radius:3px;color:#bdbdbd;font-size:.7em;line-height:30px;padding:5px;-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}
 #content_column_Optimium .author_head .fa-rss:hover{background-color:#303030;border-color:#303030;color:#fff}
-#content_column_Optimium article{color:#303030;padding-bottom:50px;position:relative;background-color:#FFFFFF;margin-bottom:30px;padding-bottom:20px;}
+#content_column_Optimium article{color:#303030;padding-bottom:50px;position:relative;background-color:#FFFFFF;margin-bottom:30px;padding-bottom:20px;width: 90%;}
 #content_column_Optimium article .left_side_article{border-bottom:1px dotted #bdbdbd;margin-bottom:10px;padding:10px;position:relative;font-size:.8em;font-weight:700;text-align:center;}
 #content_column_Optimium article .left_side_article a{color:#303030}
 #content_column_Optimium article .right_side_article{text-align:left;padding:20px;}
@@ -95,7 +95,7 @@ h6{font-family:"Raleway", serif;font-weight:400;}
 #content_column_Optimium article .reading_post_header{text-align:center}
 #content_column_Optimium article blockquote{border-left:8px double #bdbdbd;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-family:"Raleway", serif;font-size:1.4em;font-style:italic;margin:50px 0;padding:10px 0;padding-left:5%}
 #content_column_Optimium article pre{overflow: auto; border-radius:3px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;color:#fff;margin:0;width:100%}
-#content_column_Optimium article{width: 90%;}
+#content_column_Optimium article{}
 #content_column_Optimium article.index_post h2{margin:0}
 nav.pagination, footer{border-top:1px solid #bdbdbd;position:relative;padding:20px 0;text-align:center;width:100%;background-color:white;}
 nav.pagination .page-number{color:#bdbdbd;font-size:.8em}
@@ -199,7 +199,7 @@ textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
 @media(max-width:768px) and (min-width:320px){[class*=col-]{width:100%}
 .hide-on-xs{display:none}
-.boxed-cargo{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0 20px;width:100%}
+.boxed-cargo{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;/* padding:0 20px; */width:100%}
 }
 @media(max-width:960px) and (min-width:768px){
 .boxed-cargo{width:720px}
