@@ -72,14 +72,14 @@ h6{font-family:"Raleway", serif;font-weight:400;}
 #content_column_Optimium .archive_head h1{color:#bdbdbd;font-family:"Roboto", sans-serif;font-size:1em;line-height:30px;padding-bottom:20px}
 #content_column_Optimium .archive_head .fa-rss{display: block; border:1px solid #bdbdbd;border-radius:3px;color:#bdbdbd;font-size:.8em;font-weight:700;line-height:30px;padding:0 10px;position:absolute;right:0;text-decoration:none;top:0;-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}
 #content_column_Optimium .archive_head .fa-rss:hover{background-color:#303030;border-color:#303030;color:#fff}
-#content_column_Optimium .author_head{padding-bottom:0;position:relative;text-align:center;background-color: rgb(84, 84, 84); background-size: cover;background-position: bottom center;}
+#content_column_Optimium .author_head{padding-bottom:0;position:relative;text-align:center}
 #content_column_Optimium .author_head h1{font-family:"Roboto", sans-serif;font-size:1.2em;font-weight:700;line-height:1em;margin:0}
 #content_column_Optimium .author_head img{border-radius:50%;height:120px;margin:20px;width:auto}
 #content_column_Optimium .author_head .website{color:#bdbdbd;display:block;font-size:.7em;font-weight:700;margin:0;-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease;text-decoration: none;}
-#content_column_Optimium .author_head .website:hover{color:#303030}
+#content_column_Optimium .author_head .website:hover{color: #FFFFFF;}
 #content_column_Optimium .author_head p{display:inline-block;font-size:.8em;line-height:1.2em;max-width:75%; width:550px}
 #content_column_Optimium .author_head .fa-file{color:#bdbdbd;font-size:.6em;margin-left:10px}
-#content_column_Optimium .author_head .fa-rss{border-radius:3px;color:#bdbdbd;font-size:.7em;line-height:30px;padding:5px;-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}
+#content_column_Optimium .author_head .fa-rss{color:#bdbdbd;font-size:.7em;line-height:30px;padding:5px;-webkit-transition:all .2s ease;-moz-transition:all .2s ease;-ms-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}
 #content_column_Optimium .author_head .fa-rss:hover{background-color:#303030;border-color:#303030;color:#fff}
 #content_column_Optimium article{color:#303030;padding-bottom:50px;position:relative;background-color:#FFFFFF;margin-bottom:30px;padding-bottom:20px;width: 90%;}
 #content_column_Optimium article .left_side_article{border-bottom:1px dotted #bdbdbd;margin-bottom:10px;padding:10px;position:relative;font-size:.8em;font-weight:700;text-align:center;}
