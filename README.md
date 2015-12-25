@@ -1,13 +1,12 @@
-##ReadMe
-[The ReadMe is also available at KNYZ Labs.](https://www.knyz.org/readme/)
-
 #Optimium
 Optimium is a responsive material design theme based on Willsong and Casper supporting advanced features using specialized tag use.
+It's current objective to be a theme to work out-of-the box, offer LTS (Long Term Support) meaning that it will keep up-to-date with Ghost's latest features such as the upcoming API.
+
 ##Preview
 This theme is currently in active development. It is **not** complete and is updated frequently. Keep that in mind.
 
 ![Ghost Version](https://img.shields.io/badge/Ghost-0.7.2-brightgreen.svg?style=flat-square)
-![Optimium Version](https://img.shields.io/badge/Version-Alpha%20(pre--5.0.0)-yellow.svg?style=flat-square)
+![Optimium Version](https://img.shields.io/badge/Version-Alpha%20%28pre--5.0.0%29-yellow.svg?style=flat-square)
 ![ReadMe last updated](https://img.shields.io/badge/ReadMe-29/11/2015-blue.svg?style=flat-square)
 
 #Installation
@@ -61,7 +60,7 @@ Adding comment systems to Optimium is easier than any other theme. Simply paste 
  - `no-tag`: Doesn't show post on tag pages.
  - `author-only`: Doesn't show post on any pages except authors' personal pages.
  - `no-author`: Doesn't show post on authors' personal pages.
- - `hidden`: Same as `no-index`. **[Deprecated]**
+ - **[Deprecated]** `hidden`: Same as `no-index`
  - `private`: Will hide post from ALL index pages but it will **NOT** make the page inaccessible since it will be findable via the sitemap.xml, robots.txt and the RSS feed. Only good for keeping links of irrelevant posts alive.
 
 > These only work in the negative. 
@@ -85,12 +84,13 @@ The recommended size for post cover images is `760x400` since anything with a pr
 
 The cover should be along the lines of `1600x900` with the most important content centered and at the top.
 
+The author image 
 Try to follow [Google's material design standards for imagery](https://www.google.com/design/spec/style/imagery.html#) as much as possible to fit the theme better and/or use images with white background.
 
 ##Copyright Notice
 The MIT License (MIT)
 
-Copyright (c) 2015 Slava Knyazev and KNYZ Labs
+Copyright (c) 2015 Slava Knyazev <slava@knyz.org> and KNYZ Labs (https://www.knyz.org)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
