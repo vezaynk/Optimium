@@ -2,6 +2,8 @@
 Optimium is a responsive material design theme based on Willsong and Casper supporting advanced features using specialized tag use.
 It's current objective to be a theme to work out-of-the box, offer LTS (Long Term Support) meaning that it will keep up-to-date with Ghost's latest features such as the upcoming API.
 
+Note: Working alone is making me lack time to work on this. I am not using Ghost to save on time as of now. I will resume development eventually. ;)
+
 ##Preview
 This theme is currently in active development. It is **not** complete and is updated frequently. Keep that in mind.
 
